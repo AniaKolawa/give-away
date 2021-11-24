@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = ({name}) => {
     return (
-        <div>
+        <section id={name} className="contact">
             Kontakt
-        </div>
+        </section>
     );
 };
 

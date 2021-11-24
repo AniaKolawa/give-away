@@ -11,10 +11,10 @@ const Home = () => {
         <div>
             <Header/>
             <Statistics/>
-            <Steps/>
-            <About/>
-            <Beneficiary/>
-            <Contact/>
+            <Steps name="steps"/>
+            <About name="about"/>
+            <Beneficiary name="beneficiary"/>
+            <Contact name="contact"/>
         </div>
     );
 };
