@@ -1,0 +1,14 @@
+body {
+  font-family: $font-base;
+
+}
+.button {
+  border: 0.75px solid $color-font;
+  padding: 13px;
+  text-decoration: none;
+  color: $color-font;
+}
+.container {
+  width: 1652px;
+  margin: 0 auto;
+}
