@@ -6,10 +6,10 @@ const LowerMenu = () => {
         <div className="lowerNav-container">
 
             <Link className="lowerMenuLink" to="/">Start</Link>
-            <Link className="lowerMenuLink" to="steps">O co chodzi?</Link>
-            <Link className="lowerMenuLink" to="about">O nas</Link>
-            <Link className="lowerMenuLink" to="beneficiary">Fundacja i organizacje</Link>
-            <Link className="lowerMenuLink" to="contact">Kontakt</Link>
+            <Link smooth={true} className="lowerMenuLink" to="steps">O co chodzi?</Link>
+            <Link smooth={true} className="lowerMenuLink" to="about">O nas</Link>
+            <Link smooth={true} className="lowerMenuLink" to="beneficiary">Fundacja i organizacje</Link>
+            <Link smooth={true} className="lowerMenuLink" to="contact">Kontakt</Link>
 
         </div>
     );

@@ -1,11 +1,19 @@
 import React, {useState} from 'react';
 import decoration from "../assets/Decoration.svg";
-import {foundations, ngo, local} from "../data";
+import {
+    foundations,
+    ngo,
+    local,
+    foundationsDescription,
+    ngoDescription,
+    localDescription
+} from "../data";
 import Posts from "./Posts";
 import Pagination from "./Pagination";
 
 const Beneficiary = ({name}) => {
     const [posts, setPosts] = useState(foundations);
+    const [description, setDescription] = useState(foundationsDescription);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(3);
 
@@ -28,7 +36,7 @@ const Beneficiary = ({name}) => {
                     <div onClick={() => setPosts(ngo)} className="beneficiary__object button">Organizacjom pozarządowym</div>
                     <div onClick={() => setPosts(local)} className="beneficiary__object button">Lokalnym zbiórkom</div>
                 </div>
-                <p className="beneficiary__description">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
+                <p className="beneficiary__description">{description}</p>
                 <Posts beneficiaries={currentPosts}/>
                 {posts.length > postsPerPage && <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>}
             </div>

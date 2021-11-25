@@ -113,4 +113,8 @@ export const local = [
         about: `Cel i misja: Lorem ipsum 9.`,
         needs: `ubrania, sprzęt AGD, meble`
     }
-]
+];
+
+export const foundationsDescription = "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.";
+export const ngoDescription = "NGO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.";
+export const localDescription = "Local Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.";
