@@ -9,6 +9,10 @@ body {
   color: $color-font;
 }
 .container {
-  width: 1652px;
+  max-width: 1652px;
+  width: 100%;
   margin: 0 auto;
+}
+.App {
+  position: relative;
 }
