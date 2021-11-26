@@ -1,51 +1,52 @@
 .steps {
   height: 759px;
   margin-top: 55px;
-  &__title {
-    font-size: 38px;
-    line-height: 55px;
-  }
-  &__decoration {
-    width: 253px;
-    margin: 30px auto;
-  }
+
+
   &__instructions-background {
     background-color: $color-main;
     height: 325px;
     display: flex;
     align-items: center;
   }
+
   &__instructions {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+
   &__instructions-container {
     max-width: 1072px;
   }
+
   &__item {
     max-width: 164px;
   }
+
   &__subtitle {
     font-size: 18px;
     line-height: 24px;
     margin-top: 10px;
   }
+
   hr {
     border: 0;
     border-top: 1px solid $color-font;
     width: 70px;
-
   }
+
   &__description {
     font-size: 16px;
   }
+
   &__buttonContainer {
     height: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   &__button {
     font-size: 36px;
     line-height: 46px;

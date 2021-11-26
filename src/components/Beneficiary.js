@@ -39,8 +39,8 @@ const Beneficiary = ({name}) => {
     return (
         <section id={name} className="beneficiary">
             <div className="beneficiary__container container">
-                <h2 className="beneficiary__title">Komu pomagamy?</h2>
-                <div className="beneficiary__decoration"><img alt="decoration" src={decoration}/></div>
+                <h2 className="title">Komu pomagamy?</h2>
+                <div className="decoration"><img alt="decoration" src={decoration}/></div>
                 <div className="beneficiary__objects-container">
                     <div onClick={() => handleClick(foundations, foundationsDescription)} className={`beneficiary__object button ${posts === foundations ? "beneficiary__object--active" : ""}`}>Fundacjom</div>
                     <div onClick={() => handleClick(ngo, ngoDescription)} className={`beneficiary__object button ${posts === ngo ? "beneficiary__object--active" : ""}`}>Organizacjom pozarządowym</div>

@@ -10,8 +10,8 @@ const Steps = ({name}) => {
     return (
         <section id={name} className="steps">
             <div className="steps__heading container">
-                <h2 className="steps__title">Wystarczą 4 proste kroki</h2>
-                <div className="steps__decoration"><img alt="decoration" src={decoration}/></div>
+                <h2 className="title">Wystarczą 4 proste kroki</h2>
+                <div className="decoration"><img alt="decoration" src={decoration}/></div>
             </div>
             <div className="steps__instructions-background">
                 <div className="steps__instructions steps__instructions-container container">

@@ -7,8 +7,8 @@
   &__container {
     display: flex;
     justify-content: space-around;
-
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -17,17 +17,20 @@
     height: 252px;
     padding-bottom: 15px;
   }
+
   &__number {
     font-weight: 300;
     font-size: 90px;
     line-height: 122px;
     color: $color-gold;
   }
+
   &__subtitle {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.36px;
   }
+
   &__description {
     text-align: center;
     font-weight: 300;
@@ -36,7 +39,6 @@
     font-size: 14px;
     line-height: 22px;
     padding-top: 5px;
-
   }
 }
 

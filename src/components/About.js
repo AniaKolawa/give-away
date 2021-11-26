@@ -8,8 +8,8 @@ const About = ({name}) => {
         <section id={name} className="about">
 
             <div className="about__contentContainer">
-                <h2 className="about__title">O nas</h2>
-                <div className="about__decoration"><img alt="decoration" src={decoration}/></div>
+                <h2 className="title">O nas</h2>
+                <div className="decoration"><img alt="decoration" src={decoration}/></div>
                 <p className="about__description">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                 <div className="signature"><img alt="signature" src={signature}/></div>
 

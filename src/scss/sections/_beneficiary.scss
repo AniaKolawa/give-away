@@ -3,16 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 862px;
-  margin: 70px 0px;
-
-  &__title {
-    font-size: 38px;
-    line-height: 55px;
-  }
-
-  &__decoration {
-    margin: 20px;
-  }
+  margin: 120px 0px;
 
   &__description {
     max-width: 640px;
@@ -40,6 +31,10 @@
     &--active {
       border: 0.75px solid $color-font;
     }
+  }
+
+  &__list {
+    padding: 0 50px;
   }
 
   &__item {

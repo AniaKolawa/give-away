@@ -1,10 +1,14 @@
 .upperNav-container {
   margin: 20px 0;
 }
+
 .upperMenuLink {
   text-decoration: none;
   margin-left: 20px;
   padding: 13px;
   color: $color-font-secondary;
   font-size: 14px;
+  &--active {
+    border: 0.75px solid $color-accent;
+  }
 }
