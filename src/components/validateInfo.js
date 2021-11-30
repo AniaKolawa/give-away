@@ -13,8 +13,12 @@ export default function validateInfo(values) {
         errors.email = "Podany email jest nieprawidłowy!"
     }
 
-    if(values.message.length < 120){
+    if(values.message && values.message.length < 120){
         errors.message = "Wiadomość nie może być krótsza niż 120 znaków"
+    }
+
+    if(values.password && values.password.length < 6){
+        errors.password = "Podane hasło jest za krótkie!"
     }
 
     return errors;

@@ -1,12 +1,8 @@
 import React from 'react';
 import {useState, useEffect} from "react";
 
-const useForm = (validate) => {
-    const [values, setValues] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
+const useForm = (validate, formData) => {
+    const [values, setValues] = useState(formData);
     const [errors, setErrors] = useState({});
 
     const handleChange = e => {

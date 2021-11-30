@@ -9,6 +9,11 @@ import validate from "./validateInfo";
 const Contact = ({name}) => {
 
     const [success, setSuccess] = useState(false);
+    const formData = {
+        name: "",
+        email: "",
+        message: "",}
+
 
 const handleFormData = () => {
     fetch(`https://fer-api.coderslab.pl/v1/portfolio/contact`, {
@@ -40,7 +45,7 @@ const handleFormData = () => {
 
 
 
-    const {handleChange, values, setValues, handleSubmit, errors, setErrors} = useForm(validate);
+    const {handleChange, values, setValues, handleSubmit, errors, setErrors} = useForm(validate, formData);
 
     return (
         <section id={name} className="contact">
