@@ -8,16 +8,24 @@ import {BrowserRouter as Router,
 import {Link} from "react-scroll"
 import Home from "./components/Home";
 import Menu from "./components/Menu";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
       <Router>
         <div className="App">
-          <Menu />
+          <Menu/>
           <Switch>
             <Route exact path="/">
-              <Home />
+                <Home />
             </Route>
+            <Route path="/login">
+                <Login />
+            </Route>
+              <Route path="/rejestracja">
+                  <Register />
+              </Route>
           </Switch>
         </div>
       </Router>

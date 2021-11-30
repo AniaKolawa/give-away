@@ -7,7 +7,7 @@ const Menu = () => {
         <nav className="navigation">
             <div className="menus-container container">
                 <UpperMenu/>
-                <LowerMenu/>
+                <LowerMenu />
             </div>
         </nav>
     );

@@ -95,3 +95,16 @@
   }
 
 }
+.error {
+  font-size: 12px;
+  color: red;
+  font-family: $font-alt;
+  text-align: left;
+  padding-top: 5px;
+}
+.successMsg {
+  font-weight: 700;
+  line-height: 25px;
+  color: #33ab04;
+  font-family: $font-alt;
+}

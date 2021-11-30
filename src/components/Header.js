@@ -16,8 +16,8 @@ const Header = () => {
                     <h2 className="title">Zacznij pomagać!<br/>Oddaj niechciane rzeczy w zaufane ręce</h2>
                     <div className="decoration"><img alt="decoration" src={decoration}/></div>
                     <div className="header__linksWrapper">
-                        <Link to={"/give-away"} className="button header__button">ODDAJ<br/>RZECZY</Link>
-                        <Link to={"/organize-collection"} className="button header__button">ZORGANIZUJ<br/>ZBIÓRKĘ</Link>
+                        <Link to={"/login"} className="button header__button">ODDAJ<br/>RZECZY</Link>
+                        <Link to={"/login"} className="button header__button">ZORGANIZUJ<br/>ZBIÓRKĘ</Link>
                     </div>
                 </div>
             </div>
