@@ -21,5 +21,9 @@ export default function validateInfo(values) {
         errors.password = "Podane hasło jest za krótkie!"
     }
 
+    if(values.password2 && values.password2 !== values.password){
+        errors.password2 = "Podane hasła nie są takie same!"
+    }
+
     return errors;
 };
