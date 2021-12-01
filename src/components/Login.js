@@ -11,7 +11,7 @@ const formData = {
     password: "",
 }
 
-    const {handleChange, values, setValues, handleSubmit, errors, setErrors} = useForm(validate, formData);
+    const {handleChange, values, handleSubmit, errors} = useForm(validate, formData);
 
     return (
         <div className="login">
@@ -19,7 +19,6 @@ const formData = {
             <div className="decoration"><img alt="decoration" src={decoration}/></div>
             <form onSubmit={(e) => {
                 handleSubmit(e)
-                // handleFormData()
             }} id="login_form">
                 <div className="login__inputs">
                     <div className="login__item">
@@ -42,15 +41,12 @@ const formData = {
                                onChange={(e) => handleChange(e)}/>
                         {errors.password && <div className="error">{errors.password}</div>}
                     </div>
-
                 </div>
             </form>
             <div className="login__buttonsContainer">
                 <Link to={"/rejestracja"} className="button button--noBorder">Załóż konto</Link>
                 <button type="submit" form="login_form" className="button">Zaloguj się</button>
             </div>
-
-
         </div>
     );
 };

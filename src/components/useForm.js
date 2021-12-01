@@ -1,5 +1,5 @@
 import React from 'react';
-import {useState, useEffect} from "react";
+import {useState} from "react";
 
 const useForm = (validate, formData) => {
     const [values, setValues] = useState(formData);
@@ -17,7 +17,7 @@ const useForm = (validate, formData) => {
     const handleSubmit = e => {
         e.preventDefault();
         setErrors(validate(values));
-    }
+    };
 
     return {handleChange, values, setValues, handleSubmit, errors, setErrors};
 

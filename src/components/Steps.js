@@ -40,12 +40,10 @@ const Steps = ({name}) => {
                         <p className="steps__description">kurier przyjedzie w dogodnym terminie</p>
                     </article>
             </div>
-
             </div>
             <div className="steps__buttonContainer container">
                 <Link to={"/login"} className="button steps__button">ODDAJ<br/>RZECZY</Link>
             </div>
-
         </section>
     );
 };

@@ -11,7 +11,7 @@ const Register = () => {
         password2: "",
     }
 
-    const {handleChange, values, setValues, handleSubmit, errors, setErrors} = useForm(validate, formData);
+    const {handleChange, values, handleSubmit, errors} = useForm(validate, formData);
 
 
     return (
@@ -20,7 +20,6 @@ const Register = () => {
             <div className="decoration"><img alt="decoration" src={decoration}/></div>
             <form onSubmit={(e) => {
                 handleSubmit(e)
-                // handleFormData()
             }} id="register_form">
                 <div className="login__inputs login__inputs--register">
                     <div className="login__item">
@@ -53,15 +52,12 @@ const Register = () => {
                                onChange={(e) => handleChange(e)}/>
                         {errors.password2 && <div className="error">{errors.password2}</div>}
                     </div>
-
                 </div>
             </form>
             <div className="login__buttonsContainer">
                 <Link to={"/login"} className="button button--noBorder">Zaloguj się</Link>
                 <button type="submit" form="register_form" className="button">Załóż konto</button>
             </div>
-
-
         </div>
     );
 };
